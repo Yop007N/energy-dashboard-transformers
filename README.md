@@ -1,37 +1,37 @@
 # Energy Dashboard Transformers
 
-Un dashboard profesional para monitoreo de transformadores eléctricos con análisis de consumo energético en tiempo real.
+Un dashboard profesional para monitoreo de transformadores el??ctricos con an??lisis de consumo energ??tico en tiempo real.
 
-## 🚀 Características
+## ???? Caracter??sticas
 
-- **Monitoreo en Tiempo Real**: Visualización de datos de consumo energético en vivo
-- **Análisis Histórico**: Consulta de datos históricos con filtros de fecha personalizables
-- **Comparación Multi-Serie**: Comparar el rendimiento de múltiples transformadores
+- **Monitoreo en Tiempo Real**: Visualizaci??n de datos de consumo energ??tico en vivo
+- **An??lisis Hist??rico**: Consulta de datos hist??ricos con filtros de fecha personalizables
+- **Comparaci??n Multi-Serie**: Comparar el rendimiento de m??ltiples transformadores
 - **Alertas Inteligentes**: Sistema de alertas basado en umbrales de capacidad
-- **Dashboard Responsivo**: Optimizado para dispositivos móviles y desktop
-- **API REST**: Backend completo con documentación Swagger
-- **Datos Realistas**: Simulación de patrones de consumo energético realistas
+- **Dashboard Responsivo**: Optimizado para dispositivos m??viles y desktop
+- **API REST**: Backend completo con documentaci??n Swagger
+- **Datos Realistas**: Simulaci??n de patrones de consumo energ??tico realistas
 
-## 🛠️ Tecnologías
+## ??????? Tecnolog??as
 
 ### Frontend
 - **React 18** - Biblioteca de UI
-- **Lightweight Charts** - Gráficos de alto rendimiento
+- **Lightweight Charts** - Gr??ficos de alto rendimiento
 - **Axios** - Cliente HTTP
 - **CSS3** - Estilos modernos con gradientes y animaciones
 
 ### Backend
 - **Node.js** - Runtime del servidor
 - **Express** - Framework web
-- **Swagger** - Documentación de API
-- **CORS** - Configuración de seguridad
+- **Swagger** - Documentaci??n de API
+- **CORS** - Configuraci??n de seguridad
 
-## 📋 Prerrequisitos
+## ???? Prerrequisitos
 
 - Node.js >= 16.0.0
 - npm >= 8.0.0
 
-## 🚀 Instalación y Configuración
+## ???? Instalaci??n y Configuraci??n
 
 1. **Clonar el repositorio**:
 ```bash
@@ -64,77 +64,77 @@ npm start
 # Ejecutar solo el backend
 npm run server
 
-# Ejecutar frontend y backend simultáneamente
+# Ejecutar frontend y backend simult??neamente
 npm run dev
 ```
 
-5. **Acceder a la aplicación**:
+5. **Acceder a la aplicaci??n**:
 - Frontend: http://localhost:3000
 - Backend API: http://localhost:3002
-- Documentación Swagger: http://localhost:3002/api-docs
+- Documentaci??n Swagger: http://localhost:3002/api-docs
 
-## 📊 Transformadores Configurados
+## ???? Transformadores Configurados
 
-| ID | Nombre | Capacidad | Ubicación | Voltaje |
+| ID | Nombre | Capacidad | Ubicaci??n | Voltaje |
 |----|--------|-----------|-----------|---------|
 | A | Transformador Alpha | 3000 kVA | Sector Norte | 13.8/0.4 kV |
 | B | Transformador Beta | 2500 kVA | Sector Centro | 13.8/0.4 kV |
 | C | Transformador Gamma | 3500 kVA | Sector Sur | 13.8/0.4 kV |
 
-## 🔧 Características del Dashboard
+## ???? Caracter??sticas del Dashboard
 
-### Gráfico Histórico
+### Gr??fico Hist??rico
 - Consulta de datos por rango de fechas
-- Botones de acceso rápido (último día, semana, mes, 3 meses)
-- Línea de capacidad máxima para referencia
-- Información detallada del transformador
+- Botones de acceso r??pido (??ltimo d??a, semana, mes, 3 meses)
+- L??nea de capacidad m??xima para referencia
+- Informaci??n detallada del transformador
 
-### Gráfico en Tiempo Real
-- Actualización automática cada 5 segundos
-- Indicadores de estado (Normal, Advertencia, Crítico)
-- Últimos 30 puntos de datos
+### Gr??fico en Tiempo Real
+- Actualizaci??n autom??tica cada 5 segundos
+- Indicadores de estado (Normal, Advertencia, Cr??tico)
+- ??ltimos 30 puntos de datos
 - Monitoreo de carga actual
 
-### Gráfico Multi-Serie
-- Comparación simultánea de todos los transformadores
-- Análisis de rendimiento relativo
-- Identificación de patrones de consumo
+### Gr??fico Multi-Serie
+- Comparaci??n simult??nea de todos los transformadores
+- An??lisis de rendimiento relativo
+- Identificaci??n de patrones de consumo
 
-## 🌐 API Endpoints
+## ???? API Endpoints
 
 ### Transformadores
 - `GET /api/transformers` - Lista todos los transformadores
-- `GET /api/transformer-capacity/:id` - Información de capacidad
+- `GET /api/transformer-capacity/:id` - Informaci??n de capacidad
 
 ### Datos
-- `GET /api/historical-data/:id` - Datos históricos con filtros
+- `GET /api/historical-data/:id` - Datos hist??ricos con filtros
 - `GET /api/real-time-data/:id` - Datos en tiempo real
 - `GET /api/multi-series-data` - Datos comparativos
 
 ### Utilidades
 - `GET /health` - Estado del servidor
-- `GET /api-docs` - Documentación Swagger
+- `GET /api-docs` - Documentaci??n Swagger
 
-## 📈 Patrones de Datos
+## ???? Patrones de Datos
 
-El sistema simula patrones realistas de consumo energético:
+El sistema simula patrones realistas de consumo energ??tico:
 
 - **Carga Base**: 30% de la capacidad nominal
 - **Pico Matutino**: 6:00-9:00 AM (+50% de carga)
 - **Pico Vespertino**: 17:00-21:00 PM (+80% de carga)
 - **Consumo Nocturno**: 22:00-5:00 AM (-30% de carga)
-- **Variación Aleatoria**: ±15% para simular fluctuaciones reales
+- **Variaci??n Aleatoria**: ??15% para simular fluctuaciones reales
 
-## 🎨 Personalización
+## ???? Personalizaci??n
 
 ### Modificar Transformadores
-Editar la configuración en `server.js`:
+Editar la configuraci??n en `server.js`:
 ```javascript
 const transformerConfig = {
   A: {
     name: 'Tu Transformador',
     capacity: 5000,
-    location: 'Tu Ubicación',
+    location: 'Tu Ubicaci??n',
     voltage: 'Tu Voltaje'
   }
 };
@@ -157,29 +157,29 @@ WARNING_THRESHOLD=70
 CRITICAL_THRESHOLD=90
 ```
 
-## 🏗️ Estructura del Proyecto
+## ??????? Estructura del Proyecto
 
 ```
 energy-dashboard-transformers/
-├── src/
-│   ├── components/
-│   │   ├── HistoricalChart.js
-│   │   ├── RealTimeChart.js
-│   │   └── MultiSeriesChart.js
-│   ├── App.js
-│   ├── App.css
-│   └── index.js
-├── public/
-├── server.js              # Backend API
-├── swaggerConfig.js       # Configuración Swagger
-├── package.json
-├── .env                   # Variables de entorno
-└── README.md
+????????? src/
+???   ????????? components/
+???   ???   ????????? HistoricalChart.js
+???   ???   ????????? RealTimeChart.js
+???   ???   ????????? MultiSeriesChart.js
+???   ????????? App.js
+???   ????????? App.css
+???   ????????? index.js
+????????? public/
+????????? server.js              # Backend API
+????????? swagger-config.js       # Configuraci??n Swagger
+????????? package.json
+????????? .env                   # Variables de entorno
+????????? README.md
 ```
 
-## 🚀 Despliegue
+## ???? Despliegue
 
-### Producción Local
+### Producci??n Local
 ```bash
 npm run build
 npm run server
@@ -197,7 +197,7 @@ EXPOSE 3002
 CMD ["npm", "run", "server"]
 ```
 
-### Variables de Entorno de Producción
+### Variables de Entorno de Producci??n
 ```env
 NODE_ENV=production
 PORT=3002
@@ -205,35 +205,35 @@ CORS_ORIGIN=https://tu-dominio.com
 LOG_LEVEL=warn
 ```
 
-## 🧪 Testing
+## ???? Testing
 
 ```bash
-# Ejecutar tests (cuando estén implementados)
+# Ejecutar tests (cuando est??n implementados)
 npm test
 
 # Verificar API
 curl http://localhost:3002/health
 ```
 
-## 📚 Documentación Adicional
+## ???? Documentaci??n Adicional
 
 - **API Documentation**: http://localhost:3002/api-docs
 - **Lightweight Charts**: https://tradingview.github.io/lightweight-charts/
 - **React Documentation**: https://reactjs.org/
 
-## 🔒 Seguridad
+## ???? Seguridad
 
-- CORS configurado para orígenes específicos
-- Variables de entorno para configuración sensible
-- Validación de parámetros de entrada
+- CORS configurado para or??genes espec??ficos
+- Variables de entorno para configuraci??n sensible
+- Validaci??n de par??metros de entrada
 - Manejo seguro de errores
 
-## 👨‍💻 Autor
+## ??????????? Autor
 
 **Enrique Bobadilla**
 - GitHub: [@yop007n](https://github.com/yop007n)
 
-## 🤝 Contribuciones
+## ???? Contribuciones
 
 Las contribuciones son bienvenidas. Por favor:
 
@@ -243,9 +243,9 @@ Las contribuciones son bienvenidas. Por favor:
 4. Push a la rama (`git push origin feature/AmazingFeature`)
 5. Abre un Pull Request
 
-## 📞 Soporte
+## ???? Soporte
 
-Para soporte técnico o preguntas:
+Para soporte t??cnico o preguntas:
 - Abrir un issue en GitHub
-- Consultar la documentación Swagger
+- Consultar la documentaci??n Swagger
 - Revisar los logs del servidor
